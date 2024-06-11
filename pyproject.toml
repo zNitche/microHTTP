@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools==70.0.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["microHTTP"]
+
+[project]
+name = "microHTTP"
+version = ""
+authors = [
+  { name = "zNitche" },
+]
+description = "minimal async HTTP client for micropython"
+readme = "README.md"
+classifiers = [
+    "Environment :: Web",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: Implementation :: MicroPython",
+    "License :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+
+[project.urls]
+Homepage = "https://github.com/zNitche/microHTTP"
+Issues = "https://github.com/zNitche/microHTTP/issues"
