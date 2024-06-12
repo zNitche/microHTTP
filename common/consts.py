@@ -1,0 +1,6 @@
+class HTTPConsts:
+    HOST_KEY = "HOST"
+    CONTENT_LENGTH = "CONTENT-LENGTH"
+    CONTENT_TYPE = "CONTENT-TYPE"
+
+    CONTENT_TYPE_JSON = "application/json"
