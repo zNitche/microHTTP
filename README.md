@@ -2,7 +2,7 @@
 
 minimal async HTTP client for micropython
 
-#### Local installation (for development)
+### Local installation (for development)
 ```
 python3 -m build --sdist
 pip3 install dist/microhttp-[version].tar.gz
@@ -29,17 +29,9 @@ in short copy `microHTTP` package to `[micropython_src_dir]/ports/rp2/modules` a
 make -C ports/rp2 BOARD=RPI_PICO_W
 ```
 
-#### Development
-
-install packages in `requirements.txt` used for development
+### Development
+packages in `requirements.txt` are used for development / build
 
 ```
 pip3 install -r requirements.txt
-```
-
-enter repl
-
-```
-> rshell
-> repl
 ```
