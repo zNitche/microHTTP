@@ -5,21 +5,24 @@ minimal async HTTP client for micropython
 ### Local installation (for development)
 ```
 python3 -m build --sdist
-pip3 install dist/microhttp-[version].tar.gz
+pip3 install dist/microhttp-<VERSION>.tar.gz
 ```
 
 #### Microcontroller installation
-##### As git submodule
+#### Get package from GitHub release
 
-In order to use `microHTTP` in your project without keeping whole 
-codebase in repo, package should be added as `git submodule`.
-
-In your project root directory add `microHTTP` as git submodule.
+1. Get `.zip` package (replace `<VERSION>` with release number, for instance `v1.0.1`)
 ```
-git submodule add --name microHTTP -b production https://github.com/zNitche/microHTTP ./microHTTP
+wget -O microHTTP.zip https://github.com/zNitche/microHTTP/releases/download/<VERSION>/microHTTP-<VERSION>.zip
 ```
 
-Flash microcontroller and you are good to go.
+2. Unpack archive and add its content to your project (don't forget to include it in `.gitignore`)
+```
+unzip microHTTP.zip
+cp -r microHTTP <PROJECT_PATH>/microHTTP
+```
+
+3. Flash microcontroller and you are good to go.
 
 ##### As a MicroPython frozen module
 See Micropython [docs](https://docs.micropython.org/en/latest/reference/manifest.html#manifest).
